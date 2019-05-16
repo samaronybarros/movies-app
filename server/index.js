@@ -12,4 +12,4 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.listen(apiPort, () => console.log('Server running on port 3000'))
+app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
