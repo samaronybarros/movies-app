@@ -7,9 +7,9 @@ const movieRouter = require('./routes/movie-router')
 const app = express()
 const apiPort = 3000
 
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }))
 app.use(cors())
-app.use(bodyParser.json())
+app.use(express.json())
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
